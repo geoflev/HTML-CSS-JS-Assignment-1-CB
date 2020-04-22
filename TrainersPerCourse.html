@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!--   ISO-8859-7 Greek   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ProjectCSS.css">
+    <script defer src="scripts.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--NAVIGATOR-->
+        <nav class=" navbar navbar-expand-md navbar-light bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="IndiLogo.svg" width="30" height="30" class="d-inline-block align-top"
+                    alt="Individual Project Logo" />
+                Front End</a>
+            <button class="navbar-toggler" type="button" aria-controls="navbar1" data-toggle="collapse"
+                data-target="#navbar1" aria-expanded="false" aria-label="toggle here">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Graduates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div class="container table-responsive">
+        <form class="form" id="form" class="col-6">
+            <h3>Courses</h3>
+            <select name="firstDropdown" id="firstDropdown">
+                <option value="0">Choose Course </option>
+                <option value="1" id="Course 1">Course 1 </option>
+                <option value="2" id="Course 2">Course 2 </option>
+                <option value="3" id="Course 3">Course 3 </option>
+            </select>
+            <hr>
+            <h4>Available Trainers</h4>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>George</td>
+                                    <td>Flevaris</td>
+                                    <td>Java Basics</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning"><i
+                                                class="fa fa-plus"></i>Add</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Sophia</td>
+                                    <td>Chrisov</td>
+                                    <td>C# Basics</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning"><i
+                                                class="fa fa-plus"></i>Add</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Harry</td>
+                                    <td>Clin</td>
+                                    <td>COBOL Advanced</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning"><i
+                                                class="fa fa-plus"></i>Add</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" class="far fa-eye">Submit</button>
+        </form>
+    </div>
+    <div class="sidenav navbar-light bg-info">
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Course
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="addCourse.html">Add</a>
+                <a class="dropdown-item" href="editCourse.html">Edit</a>
+                <a class="dropdown-item" href="updateCourse.html">Update</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Student
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="addStudent.html">Add</a>
+                <a class="dropdown-item" href="editStudent.html">Edit</a>
+                <a class="dropdown-item" href="updateStudent.html">Update</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Trainer
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="addTrainer.html">Add</a>
+                <a class="dropdown-item" href="editTrainer.html">Edit</a>
+                <a class="dropdown-item" href="updateTrainer.html">Update</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Assignment
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="addAssignment.html">Add</a>
+                <a class="dropdown-item" href="editAssignment.html">Edit</a>
+                <a class="dropdown-item" href="updateAssignment.html">Update</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Matching
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="StudentsToCourses.html">Students to Courses</a>
+                <a class="dropdown-item" href="TrainersPerCourse.html">Trainers to Courses</a>
+                <a class="dropdown-item" href="AssignmentsPerCourse.html">Assignments to Courses</a>
+                <a class="dropdown-item" href="AssignmentPerCoursePerStudent.html">per Course per Student</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Edit
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="EUStudentsToCourses.html">Students to Courses</a>
+                <a class="dropdown-item" href="EUTrainersToCourses.html">Trainers to Courses</a>
+                <a class="dropdown-item" href="EUAssignmentsToCourses.html">Assignments to Courses</a>
+                <a class="dropdown-item" href="EUAssignmentPerCoursePerStudent.html">per Course per Student</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Update
+            </button>
+            <div class="dropdown-menu" id="dropdownMatch">
+                <a class="dropdown-item" href="UpdateStudentsToCourses.html">Students to Courses</a>
+                <a class="dropdown-item" href="UpdateTrainersToCourses.html">Trainers to Courses</a>
+                <a class="dropdown-item" href="UpdateAssignmentsToCourses.html">Assignments to Courses</a>
+                <a class="dropdown-item" href="UpdateAssignmentPerCoursePerStudent.html">per Course per Student</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small bg-info fixed-bottom">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright: George Flevaris
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+</body>
+
+</html>
